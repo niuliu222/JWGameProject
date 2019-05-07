@@ -1,0 +1,128 @@
+DlgVersion 7
+DlgName "Get_0005"
+DlgGuid {  A -506803870 B 1091119936 C 537181595 D -1812990163 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses
+{
+	{  ParticipantName "对话结束" ParticipantClass "" }
+	{  ParticipantName "<我>" ParticipantClass "" }
+	{  ParticipantName "系统通知" ParticipantClass "" }
+	{  ParticipantName "落日村村长" ParticipantClass "" }
+	{  ParticipantName "<姐姐>" ParticipantClass "" }
+}
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text "请问你是村长吗？"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "勇士，我是村长，请问你是怎么到这儿的。"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "落日村村长"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 2
+	Node_Speech 
+	{
+		Text "我受到以为名叫药老的老人指点，说这儿有圣灵水晶，村长，我欲寻求水晶前往魔城救出父母，还望村长能借于我！"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 3 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 3
+	Node_Speech 
+	{
+		Text "勇士，这恐怕很为难，我们能活到现在，全靠这水晶的神力，要是你把水晶借走了，我们恐怕活不了多久！"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "落日村村长"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 4 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 4
+	Node_Speech 
+	{
+		Text "村长，我急着前往魔城，救出爷爷，还望村长想想办法，将水晶借给我们！"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<姐姐>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 5 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 5
+	Node_Speech 
+	{
+		Text "如果你们能够除去下面的魔物，便可以保我村人安危，我就可以将水晶借于你们了。"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "落日村村长"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 6 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 6
+	Node_Speech 
+	{
+		Text "只是除去魔物带还好说，待我们去去就回。"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 7 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 7
+	Node_Speech 
+	{
+		Text "还望勇士注意安全！"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "落日村村长"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 8 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 8
+	Node_End 
+	{
+		OwnerName "对话结束"
+		bCheckChildrenOnEvaluation False
+		EnterEvents { {  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "事件触发" IntValue 0 FloatValue 0.0 NameValue "开门" bDelta False bValue False } }
+	}
+}

@@ -1,0 +1,89 @@
+DlgVersion 7
+DlgName "TownNew_006"
+DlgGuid {  A 455830234 B 1231206529 C -643051867 D 1769522931 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses
+{
+	{  ParticipantName "<姐姐>" ParticipantClass "" }
+	{  ParticipantName "<我>" ParticipantClass "" }
+	{  ParticipantName "对话结束" ParticipantClass "" }
+}
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text "啊，前面得路被落石挡住了"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<姐姐>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "看起来是的，但前几天我来这也没有被挡住"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 2
+	Node_Speech 
+	{
+		Text "旁边这个石像好像是传送阵，以前和爷爷去城里见过这个"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<姐姐>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 3 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 3
+	Node_Speech 
+	{
+		Text "以前没见过这个，我们得调查一下，<姐姐>，你知道这个怎么用吗？"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 4 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 4
+	Node_Speech 
+	{
+		Text "嗯，我看见别人用过，用起来还是很简单的，你靠过去，根据上面的提示，就能使用了"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<姐姐>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 5 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 5
+	Node_End 
+	{
+		OwnerName "对话结束"
+		bCheckChildrenOnEvaluation False
+	}
+}

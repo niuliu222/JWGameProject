@@ -1,0 +1,40 @@
+DlgVersion 7
+DlgName "SayGood"
+DlgGuid {  A 1468465500 B 1195536128 C 664179849 D -1905327484 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses
+{
+	{  ParticipantName "<我>" ParticipantClass "" }
+	{  ParticipantName "对话结束" ParticipantClass "" }
+}
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text "起来了先和父母打个招呼呢"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 1 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_End 
+	{
+		OwnerName "对话结束"
+		bCheckChildrenOnEvaluation False
+	}
+}

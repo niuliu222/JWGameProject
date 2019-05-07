@@ -1,0 +1,115 @@
+DlgVersion 7
+DlgName "Find_008"
+DlgGuid {  A -722866492 B 1206153051 C -1314906696 D -2031367193 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses
+{
+	{  ParticipantName "对话结束" ParticipantClass "" }
+	{  ParticipantName "<姐姐>" ParticipantClass "" }
+	{  ParticipantName "<我>" ParticipantClass "" }
+	{  ParticipantName "<药老>" ParticipantClass "" }
+}
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text "你们终于回来了，圣灵水晶找到了吗？"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<药老>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "嗯，我们找到了，这就是！（交给药老圣灵水晶）"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 2
+	Node_Speech 
+	{
+		Text "嗯，等我把通往魔城的们打开！"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<药老>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 3 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 3
+	Node_Speech 
+	{
+		Text "呀！！！呀！！！！！（口中唧咕出咒语）"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<药老>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 4 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 4
+	Node_Speech 
+	{
+		Text "好了，通往魔城的们打开了，祝你们好运！我先回去了。"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<药老>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 5 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 5
+	Node_Speech 
+	{
+		Text "（药老走后） <姐姐>，我们走吧！"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		EnterEvents { {  ParticipantName "<药老>" EventType "EDlgEventType::DlgEventEvent" EventName "回到起始位置" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False } }
+		Children { {  TargetIndex 6 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 6
+	Node_Speech 
+	{
+		Text "嗯，爷爷，叔叔婶婶，你们可要等着我们呀！"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<姐姐>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 7 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 7
+	Node_End 
+	{
+		OwnerName "对话结束"
+		bCheckChildrenOnEvaluation False
+	}
+}

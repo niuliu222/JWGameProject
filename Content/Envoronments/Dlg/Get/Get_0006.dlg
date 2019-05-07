@@ -1,0 +1,92 @@
+DlgVersion 7
+DlgName "Get_0006"
+DlgGuid {  A 727597578 B 1328037773 C -1774185313 D 1398423875 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses
+{
+	{  ParticipantName "对话结束" ParticipantClass "" }
+	{  ParticipantName "<我>" ParticipantClass "" }
+	{  ParticipantName "系统通知" ParticipantClass "" }
+	{  ParticipantName "落日村村长" ParticipantClass "" }
+	{  ParticipantName "<姐姐>" ParticipantClass "" }
+}
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text "村长，我们完成了"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "勇士，我代表全村人感谢你救了我们，这便是你们要的水晶，给你们，祝你们早日救出家人！"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "落日村村长"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 2
+	Node_Speech 
+	{
+		Text "多谢村长！"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<姐姐>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 3 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 3
+	Node_Speech 
+	{
+		Text "村长，我们告辞了！后会有期"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 4 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 4
+	Node_Speech 
+	{
+		Text "祝愿你们早日归来！"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "落日村村长"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 5 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 5
+	Node_End 
+	{
+		OwnerName "对话结束"
+		bCheckChildrenOnEvaluation False
+		EnterEvents { {  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "事件触发" IntValue 0 FloatValue 0.0 NameValue "开门" bDelta False bValue False } }
+	}
+}

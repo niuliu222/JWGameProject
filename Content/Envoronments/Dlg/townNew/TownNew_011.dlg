@@ -1,0 +1,53 @@
+DlgVersion 7
+DlgName "TownNew_011"
+DlgGuid {  A 1980866867 B 1106176883 C 1868158864 D -1578995370 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses
+{
+	{  ParticipantName "对话结束" ParticipantClass "" }
+	{  ParticipantName "<我>" ParticipantClass "" }
+	{  ParticipantName "<姐姐>" ParticipantClass "" }
+}
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text "刚刚那人走到这儿消失了！这个传送们以前一直是坏的，难道现在好了？"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "我感觉到传送们灵力涌现，应该好了，我们去追上他"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<姐姐>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 2 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 2
+	Node_End 
+	{
+		OwnerName "对话结束"
+		bCheckChildrenOnEvaluation False
+	}
+}

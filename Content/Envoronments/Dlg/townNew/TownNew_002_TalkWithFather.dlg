@@ -1,0 +1,117 @@
+DlgVersion 7
+DlgName "TownNew_002_TalkWithFather"
+DlgGuid {  A -1300230842 B 1213283037 C -1755338353 D 470081966 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses
+{
+	{  ParticipantName "<爸爸>" ParticipantClass "" }
+	{  ParticipantName "<我>" ParticipantClass "" }
+	{  ParticipantName "对话结束" ParticipantClass "" }
+}
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text "<我>，你醒了，刚刚<姐姐>来找你了，见你还没起就走了。"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<爸爸>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_Speech 
+	{
+		Text "嗯，我知道了，肯定是昨天约了和她要去打猎，她今天起的真早，我待会就去找她"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 2
+	Node_Speech 
+	{
+		Text "睡一觉起来还没有忘记<姐姐>家在哪儿吧？"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<爸爸>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children
+		{
+			{  TargetIndex 3 Text "有点忘了" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 4 Text "当然没有" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 3
+	Node_Speech 
+	{
+		Text "有点忘了"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 5 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 4
+	Node_Speech 
+	{
+		Text "当然没有"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<我>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 6 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 5
+	Node_Speech 
+	{
+		Text "她家就在对面，有时间了赶紧去吧"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<爸爸>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 7 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 6
+	Node_Speech 
+	{
+		Text "嗯，她看起来也不是急着找你，不过你也不要让别人等太久。"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "<爸爸>"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 7 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 7
+	Node_End 
+	{
+		OwnerName "对话结束"
+		bCheckChildrenOnEvaluation False
+	}
+}
