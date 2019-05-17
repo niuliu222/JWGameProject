@@ -16,6 +16,7 @@ DlgParticipantClasses
 {
 	{  ParticipantName "<我>" ParticipantClass "" }
 	{  ParticipantName "对话结束" ParticipantClass "" }
+	{  ParticipantName "系统通知" ParticipantClass "" }
 }
 Node Nodes
 {
@@ -48,6 +49,10 @@ Node Nodes
 	{
 		OwnerName "对话结束"
 		bCheckChildrenOnEvaluation False
-		EnterEvents { {  ParticipantName "<我>" EventType "EDlgEventType::DlgEventEvent" EventName "切换到普通动画蓝图" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False } }
+		EnterEvents
+		{
+			{  ParticipantName "<我>" EventType "EDlgEventType::DlgEventEvent" EventName "切换到普通动画蓝图" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False }
+			{  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "任务通知" IntValue 0 FloatValue 0.0 NameValue "逛逛" bDelta False bValue False }
+		}
 	}
 }
