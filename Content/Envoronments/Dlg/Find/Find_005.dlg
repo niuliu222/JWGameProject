@@ -19,6 +19,7 @@ DlgParticipantClasses
 	{  ParticipantName "<我>" ParticipantClass "" }
 	{  ParticipantName "<???>" ParticipantClass "" }
 	{  ParticipantName "<药老>" ParticipantClass "" }
+	{  ParticipantName "系统通知" ParticipantClass "" }
 }
 Node Nodes
 {
@@ -171,6 +172,13 @@ Node Nodes
 	{
 		OwnerName "对话结束"
 		bCheckChildrenOnEvaluation False
+		EnterEvents
+		{
+			{  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "任务完成" IntValue 0 FloatValue 0.0 NameValue "追踪黑影" bDelta False bValue False }
+			{  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "任务完成" IntValue 0 FloatValue 0.0 NameValue "追踪黑影（二）" bDelta False bValue False }
+			{  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "任务完成" IntValue 0 FloatValue 0.0 NameValue "前往左边的房屋" bDelta False bValue False }
+			{  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "任务通知" IntValue 0 FloatValue 0.0 NameValue "离开" bDelta False bValue False }
+		}
 	}
 	// 13
 	Node_Speech 

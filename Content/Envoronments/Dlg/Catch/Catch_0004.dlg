@@ -123,6 +123,11 @@ Node Nodes
 	{
 		OwnerName "对话结束"
 		bCheckChildrenOnEvaluation False
-		EnterEvents { {  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "事件触发" IntValue 0 FloatValue 0.0 NameValue "将主角作为攻击对象" bDelta False bValue False } }
+		EnterEvents
+		{
+			{  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "事件触发" IntValue 0 FloatValue 0.0 NameValue "将主角作为攻击对象" bDelta False bValue False }
+			{  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "任务完成" IntValue 0 FloatValue 0.0 NameValue "调查" bDelta False bValue False }
+			{  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "任务通知" IntValue 0 FloatValue 0.0 NameValue "深入敌营" bDelta False bValue False }
+		}
 	}
 }

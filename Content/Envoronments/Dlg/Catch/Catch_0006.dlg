@@ -17,6 +17,7 @@ DlgParticipantClasses
 	{  ParticipantName "<我>" ParticipantClass "" }
 	{  ParticipantName "<姐姐>" ParticipantClass "" }
 	{  ParticipantName "对话结束" ParticipantClass "" }
+	{  ParticipantName "系统通知" ParticipantClass "" }
 }
 Node Nodes
 {
@@ -42,6 +43,11 @@ Node Nodes
 		bCheckChildrenOnEvaluation False
 		VoiceSoundWave ""
 		VoiceDialogueWave ""
+		EnterEvents
+		{
+			{  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "任务完成" IntValue 0 FloatValue 0.0 NameValue "深入敌营" bDelta False bValue False }
+			{  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "任务完成" IntValue 0 FloatValue 0.0 NameValue "开启机关" bDelta False bValue False }
+		}
 		Children { {  TargetIndex 2 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
 	}
 	// 2
@@ -49,5 +55,6 @@ Node Nodes
 	{
 		OwnerName "对话结束"
 		bCheckChildrenOnEvaluation False
+		EnterEvents { {  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "任务通知" IntValue 0 FloatValue 0.0 NameValue "赶紧回家" bDelta False bValue False } }
 	}
 }

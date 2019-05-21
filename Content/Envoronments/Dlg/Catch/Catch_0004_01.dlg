@@ -18,6 +18,7 @@ DlgParticipantClasses
 	{  ParticipantName "<姐姐>" ParticipantClass "" }
 	{  ParticipantName "对话结束" ParticipantClass "" }
 	{  ParticipantName "<???>" ParticipantClass "" }
+	{  ParticipantName "系统通知" ParticipantClass "" }
 }
 Node Nodes
 {
@@ -74,5 +75,6 @@ Node Nodes
 	{
 		OwnerName "对话结束"
 		bCheckChildrenOnEvaluation False
+		EnterEvents { {  ParticipantName "系统通知" EventType "EDlgEventType::DlgEventModifyName" EventName "任务通知" IntValue 0 FloatValue 0.0 NameValue "寻找机关" bDelta False bValue False } }
 	}
 }
